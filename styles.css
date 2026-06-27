@@ -285,6 +285,47 @@ h1 {
   right: 0;
 }
 
+.banquet-band {
+  background: #fffdf9;
+  overflow: hidden;
+}
+
+.banquet-window {
+  margin: 0 calc(clamp(18px, 5vw, 72px) * -1);
+  overflow: hidden;
+}
+
+.banquet-track {
+  animation: banquet-scroll 72s linear infinite;
+  display: flex;
+  gap: 16px;
+  width: max-content;
+}
+
+.banquet-window:hover .banquet-track {
+  animation-play-state: paused;
+}
+
+.banquet-sequence {
+  display: flex;
+  gap: 16px;
+}
+
+.banquet-sequence img {
+  aspect-ratio: 3 / 2;
+  border-radius: 8px;
+  box-shadow: 0 16px 38px rgba(39, 34, 31, 0.13);
+  flex: 0 0 clamp(280px, 34vw, 460px);
+  height: clamp(186px, 22.67vw, 306px);
+  object-fit: cover;
+}
+
+@keyframes banquet-scroll {
+  to {
+    transform: translateX(calc(-50% - 8px));
+  }
+}
+
 .film-band {
   background: #293126;
   color: white;
@@ -428,6 +469,11 @@ h1 {
   .film-grid,
   .timeline {
     grid-template-columns: 1fr;
+  }
+
+  .banquet-sequence img {
+    flex-basis: 270px;
+    height: 180px;
   }
 
   .section-heading {
