@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wedding Moments</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="回到顶部">A &amp; L</a>
+      <nav class="nav" aria-label="页面导航">
+        <a href="#photos">照片</a>
+        <a href="#films">视频</a>
+        <a href="#story">故事</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-carousel" aria-hidden="true">
+          <img class="hero-media" src="media/selected/hero.jpg" alt="" />
+          <img class="hero-media" src="media/selected/photo-01.jpg" alt="" />
+          <img class="hero-media" src="media/selected/photo-04.jpg" alt="" />
+          <img class="hero-media" src="media/selected/photo-06.jpg" alt="" />
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+          <p class="eyebrow">June 26, 2026</p>
+          <h1 id="hero-title">Amelia &amp; Lucas</h1>
+          <p class="hero-copy">
+            把誓言、拥抱、笑声和每一个被光照亮的瞬间，安静地收藏在这里。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#photos">浏览照片</a>
+            <a class="button secondary" href="#films">观看视频</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="photos" aria-labelledby="photos-title">
+        <div class="section-heading">
+          <p class="eyebrow">Photo Gallery</p>
+          <h2 id="photos-title">婚礼照片</h2>
+        </div>
+        <div class="gallery">
+          <button class="photo-card featured" data-src="media/selected/photo-01.jpg" data-caption="花园合影">
+            <img src="media/selected/photo-01.jpg" alt="新人在花园小屋前合影" />
+            <span>花园合影</span>
+          </button>
+          <button class="photo-card" data-src="media/selected/photo-02.jpg" data-caption="光影头纱">
+            <img src="media/selected/photo-02.jpg" alt="新人在柔和光影下相依" />
+            <span>光影头纱</span>
+          </button>
+          <button class="photo-card" data-src="media/selected/photo-03.jpg" data-caption="温柔相握">
+            <img src="media/selected/photo-03.jpg" alt="新人近景牵手相靠" />
+            <span>温柔相握</span>
+          </button>
+          <button class="photo-card" data-src="media/selected/photo-04.jpg" data-caption="黑纱肖像">
+            <img src="media/selected/photo-04.jpg" alt="新人黑纱礼服棚拍肖像" />
+            <span>黑纱肖像</span>
+          </button>
+          <button class="photo-card" data-src="media/selected/photo-05.jpg" data-caption="外滩夜色">
+            <img src="media/selected/photo-05.jpg" alt="新娘在城市夜景旁回望" />
+            <span>外滩夜色</span>
+          </button>
+          <button class="photo-card" data-src="media/selected/photo-06.jpg" data-caption="街角回眸">
+            <img src="media/selected/photo-06.jpg" alt="新人牵手站在夜色街角" />
+            <span>街角回眸</span>
+          </button>
+          <button class="photo-card" data-src="media/selected/photo-07.jpg" data-caption="花园晴日">
+            <img src="media/selected/photo-07.jpg" alt="新人在花园中撑伞合影" />
+            <span>花园晴日</span>
+          </button>
+          <button class="photo-card" data-src="media/selected/photo-08.jpg" data-caption="黑裙誓言">
+            <img src="media/selected/photo-08.jpg" alt="新郎单膝跪地牵起新娘的手" />
+            <span>黑裙誓言</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="section film-band" id="films" aria-labelledby="films-title">
+        <div class="section-heading">
+          <p class="eyebrow">Wedding Films</p>
+          <h2 id="films-title">婚礼视频</h2>
+        </div>
+        <div class="film-grid single">
+          <article class="film main-film">
+            <video controls preload="metadata" poster="media/selected/hero.jpg">
+              <source src="media/wechat-wedding.mp4" type="video/mp4" />
+            </video>
+            <div>
+              <span class="label">Wechat Video</span>
+              <h3>微信婚礼视频</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section story" id="story" aria-labelledby="story-title">
+        <div class="section-heading">
+          <p class="eyebrow">Our Story</p>
+          <h2 id="story-title">从相遇到婚礼</h2>
+        </div>
+        <div class="timeline">
+          <article>
+            <span>2020</span>
+            <h3>第一次相遇</h3>
+            <p>一场普通的晚餐，变成了两个人共同生活的开头。</p>
+          </article>
+          <article>
+            <span>2026</span>
+            <h3>婚礼当天</h3>
+            <p>亲友围坐，灯光亮起，所有心意都落在一句“我愿意”里。</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <div class="lightbox" aria-hidden="true" role="dialog" aria-label="照片预览">
+      <button class="lightbox-close" type="button" aria-label="关闭照片预览">×</button>
+      <img src="" alt="" />
+      <p></p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+.DS_Store
+._*
+
+# Local environment and editor state
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+
+# Dependencies and build/test output
+node_modules/
+dist/
+build/
+coverage/
+.cache/
+.parcel-cache/
+.vite/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Original/private wedding source media. Optimized site media stays tracked.
+精修/
+微信视频*.mp4
+
+# Unused generated placeholder images from generate_media.py.
+media/hero-wedding.png
+media/photo-*.png
+media/video-poster-*.png
