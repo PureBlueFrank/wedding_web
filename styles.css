@@ -601,8 +601,8 @@ h1 {
   }
 
   .photo-card:last-child {
-    aspect-ratio: 16 / 9;
-    grid-column: 1 / -1;
+    aspect-ratio: 1 / 1.12;
+    grid-column: auto;
   }
 }
 
@@ -657,8 +657,7 @@ h1 {
     max-width: none;
   }
 
-  .photo-card.featured,
-  .photo-card:last-child {
+  .photo-card.featured {
     grid-column: 1 / -1;
   }
 
@@ -667,7 +666,8 @@ h1 {
   }
 
   .photo-card:last-child {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 1 / 1.12;
+    grid-column: auto;
   }
 }
 
