@@ -659,8 +659,15 @@ h1 {
 
   .photo-card.featured,
   .photo-card:last-child {
+    grid-column: 1 / -1;
+  }
+
+  .photo-card.featured {
     aspect-ratio: 1 / 1.12;
-    grid-column: auto;
+  }
+
+  .photo-card:last-child {
+    aspect-ratio: 16 / 9;
   }
 }
 
