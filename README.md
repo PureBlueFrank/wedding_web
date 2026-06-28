@@ -1,7 +1,7 @@
 # Wedding Web
 
 一个静态婚礼影像展示网站，用 HTML、CSS 和原生 JavaScript 搭建。页面用于集中展示婚纱照、婚礼现场照片、婚礼视频和两个人从相遇到婚礼的故事时间线，适合部署到 Netlify、GitHub Pages 或任意静态站点服务。
-
+线上地址：https://purebluefrank-wedding-web.netlify.app/
 ## 主要功能
 
 - 沉浸式首屏：使用多张精选照片组成自动轮播背景，叠加婚礼日期、标题文案和快捷入口。
